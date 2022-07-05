@@ -49,7 +49,7 @@ if __name__ == "__main__":
     parser.add_argument("--figsize", type=float, nargs="+", default=None,
                         help="The size of the plot figure given as two numbers (width and height). If not specified, "
                              "the figure size will be automatically determined based on the number of subplots.")
-    parser.add_argument("--ncols", type=int, default=3, help="Number of subplot columns. Default: 4")
+    parser.add_argument("--ncols", type=int, default=3, help="Number of subplot columns. Default: 3")
     parser.add_argument("--output_file", type=str, default=None,
                         help="Path to plot output file. The file extension determines which kind of plot output will "
                              "be created. If not specified, the plot output file will be created in the same "
