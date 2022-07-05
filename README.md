@@ -1,2 +1,1 @@
-# time-effort-estimation
-Small script for visualization of time effort estimation data.
+Small script for visualization of time effort estimation data. Primary purpose is to get a quick overview of exercise and assignment difficulties, for which students could estimate the number of hours required to solve these tasks.
