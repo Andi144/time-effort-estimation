@@ -14,7 +14,7 @@ def plot_duration_histograms(input_path: str, data_col_index: int, ncols: int, f
     ncols = min(ncols, len(files))
     if figsize is None:
         figsize = (ncols * 5, nrows * 5)
-    fig, axes = plt.subplots(nrows=nrows, ncols=ncols, squeeze=False, figsize=figsize)
+    fig, axes = plt.subplots(nrows=nrows, ncols=ncols, squeeze=False, figsize=figsize, constrained_layout=True)
     axes = axes.flatten()
     
     for ax, file in zip(axes, files):
@@ -28,7 +28,6 @@ def plot_duration_histograms(input_path: str, data_col_index: int, ncols: int, f
     for i in range(min(len(axes), len(files)), max(len(axes), len(files))):
         axes[i].set_visible(False)
     
-    fig.subplots_adjust(hspace=0.35)
     if output_file is None:
         if os.path.isfile(input_path):
             input_path = os.path.dirname(input_path)
